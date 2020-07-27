@@ -1,5 +1,7 @@
 .info {
   text-align: center;
+  margin-top: 44px;
+
 
 }
 
@@ -14,8 +16,22 @@
 }
 
 .info__list {
-  background-color: @grey;
   list-style: none;
+  margin: 0;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.info__wrapper {
+  background-color: @grey;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 320px;
+  margin: auto;
 }
 
 .info__title {
@@ -25,6 +41,8 @@
   font-size: 18px;
   line-height: 24px;
   color: @black;
+
+
 }
 
 .info__description {
@@ -32,4 +50,8 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+}
+
+.info__image {
+  padding-top: 48px;
 }
