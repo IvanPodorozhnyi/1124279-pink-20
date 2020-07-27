@@ -2,38 +2,39 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
-<body class="page-body">
+<body class="page__body">
 <header class="page-header">
-  <a class="page-header__logo logo" href="#"><img alt="Логотип PINK" src="#"><span
+  <a class="page-header__logo logo" href="#"><img alt="Логотип PINK" src="img/logo-pink-white-mobile.svg"><span
     class="visually-hidden">PINK</span></a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
+    <button class="main-nav__toggle main-nav__toggle--open btn visually-hidden" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">Фотографии</a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-        <li class="site-list__item">
-          <a href="https://htmlacademy.ru/">Html academy</a>
-        </li>
-      </ul>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item site-list__item--active">
+        <a class="site-list__link" href="">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="photo.html">Фотографии</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="form.html">Конкурс</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
+      </li>
+    </ul>
   </nav>
 </header>
+
 <main class="page-main">
   <h1 class="visually-hidden">PINK - раскрашивание серых будней в розовый цвет!</h1>
-  <section class="intro">
-    <div class="intro__wrapper">
-      <h2 class="visually-hidden">Презентация PINK</h2>
-      <img alt="Предварительный просмотр" class="intro__img" src="#">
+  <section class="intro intro--index">
+      <h2 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h2>
+      <img alt="Предварительный просмотр" class="intro__img" src="img/iphone-hand-mobile@1x.png">
       <div class="intro__apps apps">
         <a class="apps__button button" href="">Скачать приложение</a>
         <ul class="apps__list">
@@ -46,14 +47,16 @@
         </ul>
         <p class="apps__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    </div>
   </section>
+
+
   <section class="info">
     <header class="info__header">
       <h2 class="visually-hidden">Преимущества PINK</h2>
       <p class="info__question">Устали от серости мегаполиса?</p>
       <p class="info__answer">Нам есть, что вам предложить!</p>
     </header>
+    <div class="info__wrapper">
       <ul class="info__list">
         <li class="info__item">
           <h2 class="info__title">Поднимает настроение</h2>
@@ -71,7 +74,8 @@
             новых</p>
         </li>
       </ul>
-      <img alt="Всем привет!" class="info__image" src="#">
+      <img alt="Всем привет!" class="info__image" src="img/iphone-screen-mobile@1x.png">
+    </div>
   </section>
 
   <section class="reviews">
@@ -83,21 +87,21 @@
           <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
-        <li class="reviews__item slider__item">
+        <li class="reviews__item slider__item visually-hidden">
           <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
-        <li class="reviews__item slider__item">
+        <li class="reviews__item slider__item visually-hidden">
           <h3 class="reviews__author">Николай Петров</h3>
           <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </li>
       </ul>
       <div class="reviews__toggle slider__toggles">
-        <button class="slider__toggle slider__toggle--active" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle visually-hidden slider__toggle--active" type="button">1</button>
+        <button class="slider__toggle visually-hidden" type="button">2</button>
+        <button class="slider__toggle visually-hidden" type="button">3</button>
       </div>
     </div>
   </section>
@@ -106,7 +110,7 @@
   </section>
 </main>
 <footer class="page-footer social">
-  <a class="page-footer__logo logo" href="#"><img alt="Логотип PINK" src="#"><span
+  <a class="page-footer__logo logo" href="#"><img alt="Логотип PINK" src="img/logo-pink-blue-mobile.svg"><span
     class="visually-hidden">PINK</span></a>
   <ul class="social__list">
     <li class="social__item">
@@ -119,9 +123,9 @@
       <a class="social__link social__link--youtube" href=""><span class="visually-hidden">YouTube</span></a>
     </li>
   </ul>
-  <span class="page-footer__developed__title">Разработано</span>
+  <span class="page-footer__developed-title">Разработано</span>
   <a href="https://htmlacademy.ru/intensive/adaptive"><img alt="Логотип HtmlAcademy"
-                                                           class="page-footer__developed__logo"
+                                                           class="page-footer__developed-logo"
                                                            src="https://via.placeholder.com/27x34"></a>
 </footer>
 </body>
