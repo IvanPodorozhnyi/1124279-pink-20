@@ -3,12 +3,19 @@
   line-height: 24px;
 
 
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+
 }
 
 .photo__panorama {
   width: 140px;
   height: 36px;
-
 
   background-color: @pink;
   color: @white;
@@ -20,13 +27,6 @@
 
   text-transform: uppercase;
 
-
-}
-
-.photo__panorama-post {
-  background-color: @grey;
-  padding-left: 17px;
-
 }
 
 
@@ -34,22 +34,48 @@
   line-height: 30px;
 }
 
-.photo__user__wrapper {
+
+.photo__user--wrapper,
+.photo__user--panorama {
+  margin: auto;
+  width: 246px;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+
+.photo__user--panorama {
+  @media (min-width: @tablet-width) {
+    width: 580px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.photo__content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    margin: auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 980px;
+  }
 }
 
-.photo__user {
-  max-width: 280px;
-  margin: auto;
+.photo__user--wrapper {
+  @media (min-width: @tablet-width) {
+    height: 155px;
+  }
 }
 
-.photo__panorama__wrapper {
-  position: relative;
-}
 
-.photo__panorama {
-  position: absolute;
-  right: 20px;
-}

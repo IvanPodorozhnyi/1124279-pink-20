@@ -3,9 +3,41 @@
   margin: 0 auto;
   background-color: @dark-blue-gray;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #000000;
+    opacity: 0.3;
+
+
+  }
+
 }
+
+.page-header__wrapper {
+  @media (min-width: @desktop-width) {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
 
 .page-header__logo {
   display: block;
   padding: 19px 20px;
+  @media (min-width: @tablet-width) {
+    padding: 27px 20px;
+  }
+
 }
