@@ -27,6 +27,10 @@
 
   padding-left: 20px;
   padding-right: 20px;
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+
 }
 
 .info__wrapper {
@@ -68,4 +72,7 @@
 
 .info__image {
   padding-top: 48px;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
