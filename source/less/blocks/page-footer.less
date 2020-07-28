@@ -2,6 +2,20 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .page-footer__developed-title {

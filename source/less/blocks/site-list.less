@@ -8,12 +8,26 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media (min-width: @desktop-width) {
+    font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
+
 }
 
 .site-list__item {
   padding: 19px 20px;
   box-shadow: 0 -1px 0 @black,
   inset 0 1px 0 rgba(@white, 0.15);
+
+  @media (min-width: @desktop-width) {
+    padding-right: 78px;
+    box-shadow: none;
+  }
 }
 
 .site-list__link {
