@@ -1,9 +1,10 @@
 .intro {
+
   text-align: center;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  background-size: auto;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,18 +13,18 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: auto auto;
-
     width: @tablet-width;
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
   @media (min-width: @desktop-width) {
+
+    margin-top: -120px;
     width: @desktop-width;
     background-image: url("../img/bg-back-desktop@1x.jpg");
 
   }
 
 }
-
 
 .intro__title {
   font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
@@ -32,11 +33,18 @@
   font-size: 24px;
   line-height: 29px;
   color: @white;
-  margin-top: 0;
 
 
-  padding-right: 20px;
-  padding-left: 20px;
+  @media (min-width: @tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+
+  }
 
 }
 

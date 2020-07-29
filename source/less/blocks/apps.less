@@ -1,7 +1,16 @@
+.apps__wrapper {
+
+  margin: 0 auto;
+  outline: 1px solid green;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+
+}
+
 .apps {
-  max-width: 320px;
-  margin: auto;
   background-color: #1D2631;
+  width: 320px;
   display: flex;
   flex-direction: column;
 
@@ -23,10 +32,17 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 0;
+  }
 }
 
 .apps__list {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
   margin: 0;
   padding: 0;
