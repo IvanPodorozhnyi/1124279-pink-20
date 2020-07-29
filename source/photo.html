@@ -9,8 +9,13 @@
 <body class="page__body page__body--photo">
 <header class="page-header">
   <div class="page-header__wrapper">
-    <a class="page-header__logo logo" href="#"><img alt="Логотип PINK" src="img/logo-pink-white-mobile.svg"><span
-      class="visually-hidden">PINK</span></a>
+    <a class="page-header__logo logo" href="#"><
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+        <img alt="logo Pink" height="22" src="img/logo-pink-white-mobile.svg" width="75">
+      </picture>
+      <span class="visually-hidden">PINK</span></a>
     <nav class="main-nav">
       <button class="main-nav__toggle main-nav__toggle--open btn visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -43,11 +48,17 @@
     <p class="photo__slogan">Взгляните на фотографии, которые выкладывают пользователи!
       Видите, как не хватает ваших?</p>
 
-    <div class="photo__wrapper ">
+    <div class="photo__wrapper">
       <div class="photo__panorama">
         <p class="photo__panorama__title">Панорама дня</p>
       </div>
-      <img alt="Панорама дня" class="photo__img" src="img/panorama-mobile@1x.jpg">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+        <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+        <img alt="Панорама дня" class="photo__user__img photo__user__img--panorama" height="137"
+             src="img/panorama-mobile@1x.jpg" width="320">
+      </picture>
+
     </div>
 
     <section class="photo__user ">
@@ -65,7 +76,15 @@
     <div class="photo__content">
 
       <section class="photo__user">
-        <img alt="Автомобиль" class="photo__user__img photo__user__img--second" src="img/photo-car-mobile@1x.jpg">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+          <img alt="Автомобиль" class="photo__user__img photo__user__img--second" height="180"
+               src="img/photo-car-mobile@1x.jpg" width="280">
+        </picture>
+
+
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Левон <span class="photo-post__time">(5 часов назад)</span></h3>
           <p class="photo-post__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -77,7 +96,15 @@
       </section>
 
       <section class="photo__user ">
-        <img alt="Барабаны" class="photo__user__img photo__user__img--third" src="img/photo-drumset-mobile@1x.jpg">
+
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+          <img alt="Барабаны" class="photo__user__img photo__user__img--third" height="180"
+               src="img/photo-drumset-mobile@1x.jpg" width="280">
+        </picture>
+
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Антон <span class="photo-post__time">(12 часов назад)</span></h3>
           <p class="photo-post__comment">Соседи будут рады!</p>
@@ -89,7 +116,13 @@
       </section>
 
       <section class="photo__user ">
-        <img alt="Окно" class="photo__user__img photo__user__img--fourth" src="img/photo-window-mobile@1x.jpg">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+          <img alt="Окно" class="photo__user__img photo__user__img--fourth" height="180"
+               src="img/photo-window-mobile@1x.jpg" width="280">
+        </picture>
 
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Борис <span class="photo-post__time">(20 часов назад)</span></h3>
@@ -103,7 +136,15 @@
       </section>
 
       <section class="photo__user ">
-        <img alt="Кубанская бахча" class="photo__user__img photo__user__img--fifth" src="img/photo-fair-mobile@1x.jpg">
+
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+          <img alt="Кубанская бахча" class="photo__user__img photo__user__img--five" height="180"
+               src="img/photo-fair-mobile@1x.jpg" width="280">
+        </picture>
+
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Сергей <span class="photo-post__time">(25 часов назад)</span></h3>
           <p class="photo-post__comment">Самая кубанская в мире!</p>
@@ -115,7 +156,14 @@
       </section>
 
       <section class="photo__user ">
-        <img alt="Склон" class="photo__user__img photo__user__img--sixth" src="img/photo-pov-mobile@1x.jpg">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+          <img alt="Склон" class="photo__user__img photo__user__img--sixth" height="180"
+               src="img/photo-pov-mobile@1x.jpg" width="280">
+        </picture>
+
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Максим <span class="photo-post__time">(40 часов назад)</span></h3>
           <p class="photo-post__comment">Где снег-то?</p>
@@ -127,7 +175,14 @@
       </section>
 
       <section class="photo__user ">
-        <img alt="Крыло самолета" class="photo__user__img photo__user__img--seven" src="img/photo-wing-mobile@1x.jpg">
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+          <img alt="Крыло самолета" class="photo__user__img photo__user__img--seven" height="180"
+               src="img/photo-wing-mobile@1x.jpg" width="280">
+        </picture>
+
         <article class="photo-post photo__user--wrapper">
           <h3 class="photo-post__author">Надежда <span class="photo-post__time">(45 часов назад)</span></h3>
           <p class="photo-post__comment">Всем GM и взаимные лайки!</p>
