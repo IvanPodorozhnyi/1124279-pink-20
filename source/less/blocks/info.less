@@ -1,7 +1,14 @@
 .info {
   text-align: center;
   margin-top: 44px;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
 
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+
+  }
 
 }
 
@@ -21,6 +28,10 @@
 
   padding-left: 20px;
   padding-right: 20px;
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+
 }
 
 .info__wrapper {
@@ -30,8 +41,18 @@
   flex-direction: column;
   align-items: center;
 
-  max-width: 320px;
+  width: 320px;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+
+    flex-direction: row-reverse;
+
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .info__title {
@@ -54,4 +75,7 @@
 
 .info__image {
   padding-top: 48px;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
