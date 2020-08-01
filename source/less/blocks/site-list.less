@@ -15,18 +15,21 @@
     font-size: 18px;
     line-height: 18px;
     text-transform: none;
-  }
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
+
 .site-list__item {
-  padding: 19px 20px;
-  box-shadow: 0 -1px 0 @black,
-  inset 0 1px 0 rgba(@white, 0.15);
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #485461;
+  padding: 15px 20px;
 
   @media (min-width: @desktop-width) {
-    padding-right: 78px;
-    box-shadow: none;
+    border: none;
   }
 }
 
@@ -34,4 +37,25 @@
   text-decoration: none;
   color: @white;
   font-weight: bold;
+  @media (min-width: @desktop-width) {
+    padding-bottom: 19px;
+    &--active {
+      border-bottom: 2px solid @white;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+
+  .site-list__link {
+    &:hover {
+      color: @pink;
+    }
+
+    &:active {
+      color: rgba(@white, 0.3);
+    }
+  }
+
 }

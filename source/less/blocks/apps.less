@@ -1,7 +1,16 @@
+.apps__wrapper {
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+  position: relative;
+}
+
 .apps {
-  max-width: 320px;
-  margin: auto;
   background-color: #1D2631;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
 
@@ -23,21 +32,42 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding: 0;
+  }
 }
 
 .apps__list {
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 30px;
+  padding-right: 35px;
 }
 
 .apps__button {
   font-family: "OpenSans", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 28px;
+  margin-bottom: 38px;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: @white;
-  text-decoration: none
+  text-decoration: none;
+
+}
+
+.apps__button {
+  &:hover {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    color: rgba(@pink, 0.3);
+  }
 }
