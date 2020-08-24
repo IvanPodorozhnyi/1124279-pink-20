@@ -10,11 +10,18 @@
   }
 }
 
-.effect__content-wrapper {
+.effect__wrapper {
   margin: 0 auto;
-  padding: 50px 20px 65px;
-  width: 280px;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
 
+.effect__content-wrapper {
+  padding: 50px 20px 65px;
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;

@@ -37,6 +37,16 @@
   text-decoration: none;
   color: @white;
   font-weight: bold;
+
+  &:hover {
+    color: @pink;
+    transition: 0.1s;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
+
   @media (min-width: @desktop-width) {
     padding-bottom: 19px;
     &--active {
@@ -44,13 +54,13 @@
     }
   }
 }
-
-
 @media (min-width: @desktop-width) {
 
   .site-list__link {
     &:hover {
+
       color: @pink;
+      transition: 0.1s;
     }
 
     &:active {

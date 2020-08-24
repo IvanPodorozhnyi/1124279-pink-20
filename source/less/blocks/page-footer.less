@@ -9,24 +9,22 @@
 }
 
 .page-footer {
-  width: 320px;
-  margin: 0 auto;
   text-align: center;
-
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-
+    width: 620px;
     flex-direction: row;
     justify-content: space-around;
   }
 
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 940px;
   }
 }
 
@@ -43,20 +41,8 @@
   fill: #D22856;
 }
 
-.info__question, .info__answer {
-  @media (min-width: @tablet-width) {
-    font-size: 40px;
-  }
-}
-
-.info__answer {
-  @media (min-width: @tablet-width) {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .page-footer__wrap {
   margin-top: 40px;
 }
+
+
