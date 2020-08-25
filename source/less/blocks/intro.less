@@ -1,21 +1,13 @@
 .intro {
   text-align: center;
-  align-items: center;
-  background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 110px;
-  background-size: image-size("../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    width: 620px;
     display: grid;
-    grid-template-columns: max-content auto;
-
-
+    width: 660px;
+    grid-template-columns: auto auto;
   }
   @media (min-width: @desktop-width) {
     width: 940px;
-
   }
 }
 
@@ -28,6 +20,8 @@
   color: @white;
   width: 280px;
   margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 30px;
 
 
   @media (min-width: @tablet-width) {
@@ -37,20 +31,20 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
-
   }
-
 }
 
-.intro__apps {
-  min-height: 213px;
-
+.intro__title br {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
-
 .intro__img {
-  display: flex;
-
-  max-width: unset;
+  margin-bottom: -7px;
+  @media (min-width: @tablet-width) {
+    max-width: unset;
+    margin-left: -350px;
+  }
 }
-
 
