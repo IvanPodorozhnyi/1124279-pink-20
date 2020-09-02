@@ -18,14 +18,12 @@
   }
 }
 
-
-
 .price__wrapper {
-  position: relative;
+  padding-top: 100px;
   width: 280px;
   margin: 0 auto;
   @media (min-width: @tablet-width) {
-    width: 620px;
+    width: 660px;
   }
   @media (min-width: @desktop-width) {
     width: 940px;
@@ -33,3 +31,109 @@
 }
 
 
+.price__table {
+  width: 820px;
+  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-60%);
+}
+
+.price__table-header {
+  position: relative;
+  border-right: 1px solid @grey;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+  color: @white;
+  background-color: @dark-blue-gray;
+  text-transform: uppercase;
+  padding: 7px 60px 22px;
+
+  &--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--hit:before {
+    content: "хит";
+    transform: rotate(-45deg);
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: @white;
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.price__table-header__title,
+.price__table-header__cost {
+  display: block;
+}
+
+.price__table-header__cost {
+  font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.price__table-cell {
+  padding: 15px 20px;
+  border-right: 1px solid @grey;
+  border-bottom: 1px solid @grey;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+
+}
+
+.price__table-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  &:before {
+    content: attr(data-name);
+    text-transform: uppercase;
+  }
+
+  @media (min-width: @tablet-width) {
+    transform: translateX(50%);
+    &:before {
+      display: none;
+    }
+  }
+
+}
+
+.price__table-value {
+  &--false {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-no.png");
+  }
+
+  &--true {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.png");
+  }
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}

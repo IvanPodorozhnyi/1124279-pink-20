@@ -8,12 +8,13 @@
 
 .apps {
   background-color: #1D2631;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-top: 20px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    margin-top: 51px;
     background-color: transparent;
   }
 }
@@ -43,20 +44,25 @@
   align-items: center;
   justify-content: space-around;
   list-style: none;
-  margin-bottom: 30px;
   padding-right: 35px;
+
 }
 
 .apps__button {
   font-family: "OpenSans", Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 28px;
-  margin-bottom: 38px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 18px;
   color: @white;
   text-decoration: none;
+  @media (min-width: @desktop-width) {
+    margin-top: 89px;
+    margin-bottom: 63px;
+
+  }
 
 }
 
@@ -64,6 +70,7 @@
   &:hover {
     background-color: @white;
     color: @pink;
+    transition: 0.3s;
   }
 
   &:active {

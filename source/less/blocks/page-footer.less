@@ -6,6 +6,10 @@
   line-height: 18px;
 
   margin-right: 15px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .page-footer {
@@ -37,12 +41,16 @@
   align-items: center;
 }
 
-.page-footer__wrapper svg {
-  fill: #D22856;
-}
 
 .page-footer__wrap {
   margin-top: 40px;
 }
 
 
+.page-footer__developed-logo {
+  fill: #D22856;
+
+  &:hover {
+    fill: #000000;
+  }
+}

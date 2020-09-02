@@ -4,16 +4,16 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-
   padding-left: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 29px;
 
-
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
-
 .social__item {
-
   display: flex;
   margin-right: 8px;
   width: 48px;
@@ -21,22 +21,17 @@
   border: 3px solid fade(@dark-blue-gray, 10%);
   border-radius: 50px;
   cursor: pointer;
-
   &:hover {
     border: 3px solid @dark-blue-gray;
+    transition: 0.5s;
   }
-
   &:active {
     opacity: 0.1;
   }
-
 }
-
-
 .social__link {
   margin: auto;
 }
-
 .social__link svg {
   fill: #D22856;
 }

@@ -1,16 +1,18 @@
 .intro {
   text-align: center;
+  margin-top: 20px;
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     display: grid;
     width: 660px;
     grid-template-columns: auto auto;
+    grid-template-rows: 127px auto;
+    padding-top: 83px;
   }
   @media (min-width: @desktop-width) {
     width: 940px;
   }
 }
-
 .intro__title {
   font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
@@ -20,13 +22,13 @@
   color: @white;
   width: 280px;
   margin: 0 auto;
-  margin-top: 29px;
   margin-bottom: 30px;
 
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+
   }
   @media (min-width: @desktop-width) {
     font-size: 50px;
@@ -38,13 +40,29 @@
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
-  }
-}
-.intro__img {
-  margin-bottom: -7px;
-  @media (min-width: @tablet-width) {
-    max-width: unset;
-    margin-left: -350px;
+    margin: 0;
   }
 }
 
+.intro__img {
+  margin-left: -76px;
+  margin-bottom: -25px;
+  @media (min-width: @tablet-width) {
+    max-width: unset;
+    margin-left: -280px;
+  }
+}
+
+.intro--photo {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.intro__title--photo {
+  padding-bottom: 50px;
+  @media (min-width: @tablet-width) {
+    min-width: 358px;
+    font-size: 50px;
+  }
+}
