@@ -26,27 +26,27 @@
   background-position: 50% 510px;
   background-size: auto;
   background-repeat: no-repeat;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
-    padding: 55px 20px 25px;
     width: 620px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 30px;
+    background-position: 0 5px;
     background-size: auto;
-
     flex-direction: column;
     align-items: flex-end;
+    padding-left: 0;
+    padding-bottom: 0;
+
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    padding: 0 0 34px;
+    padding: 0 0 5px;
     width: 960px;
     background: none;
 
@@ -59,6 +59,7 @@
   background-repeat: no-repeat;
   margin-bottom: 10px;
 
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     width: 300px;
@@ -66,7 +67,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 339px;
+    padding-top: 333px;
     width: 240px;
     line-height: 30px;
     text-align: center;
@@ -100,7 +101,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   color: @black;
 
   margin-top: 20px;
@@ -108,7 +109,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
-    margin-bottom: 25px;
+
 
   }
 }
@@ -118,11 +119,11 @@
   margin-top: 0;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    padding-top: 15px;
   }
 }

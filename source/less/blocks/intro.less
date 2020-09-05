@@ -8,9 +8,13 @@
     grid-template-columns: auto auto;
     grid-template-rows: 127px auto;
     padding-top: 83px;
+    padding-left: 30px;
   }
   @media (min-width: @desktop-width) {
     width: 940px;
+    padding-left: 0;
+    padding-top: 90px;
+
   }
 }
 .intro__title {
@@ -28,6 +32,7 @@
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
+    margin-top: 16px;
 
   }
   @media (min-width: @desktop-width) {
@@ -45,11 +50,16 @@
 }
 
 .intro__img {
-  margin-left: -76px;
+  margin-left: -65px;
   margin-bottom: -25px;
   @media (min-width: @tablet-width) {
     max-width: unset;
-    margin-left: -280px;
+    margin-left: -350px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: -288px;
+    margin-top: 13px;
+
   }
 }
 
