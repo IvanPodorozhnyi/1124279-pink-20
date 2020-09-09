@@ -1,1 +1,83 @@
+.button {
+  display: block;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  font-family: opensans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+
+
+  &--competitive-send {
+    border: none;
+    background-color: #2AAB6D;
+    height: 63px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 37px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: @white;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
+    }
+  }
+
+
+  &--upload {
+    border: 3px solid #D22856;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color: @pink;
+    margin-bottom: 12px;
+
+    &:hover {
+      background: #D22856;
+      color: @white;
+      transition: 0.3s;
+
+      &:active {
+        color: fade(#FFFFFF, 30%);
+
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+      margin-right: 44px;
+    }
+  }
+
+  &--cancel {
+    border: 3px solid fade(#283645, 10%);
+    color: fade(#283645, 10%);
+
+    &:hover {
+      border: 3px solid fade(#283645, 30%);
+      color: fade(#283645, 30%);
+      transition: 0.3s;
+    }
+
+    &:active {
+      background: fade(#283645, 30%);
+      color: fade(#FFFFFF, 30%);;
+      border: 3px solid transparent;
+    }
+  }
+}
+
 
