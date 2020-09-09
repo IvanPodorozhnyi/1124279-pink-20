@@ -10,6 +10,34 @@
   cursor: pointer;
 
 
+  &--competitive-send {
+    border: none;
+    background-color: #2AAB6D;
+    height: 63px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 37px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: @white;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: fade(#ffffff, 30%);
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
+    }
+  }
+
+
   &--upload {
     border: 3px solid #D22856;
     box-sizing: border-box;

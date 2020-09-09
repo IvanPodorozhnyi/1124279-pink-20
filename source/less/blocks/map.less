@@ -3,13 +3,15 @@
   overflow: hidden;
   height: 200px;
 
-
   @media (min-width: @tablet-width) {
-    height: 373px;
+    height: 355px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     height: 501px;
+    margin-top: -10px;
+    margin-bottom: 32px;
   }
 
   &::before {
@@ -22,7 +24,7 @@
     height: 33px;
     background-image: url("../img/bg-triangle-white-footer.png");
     background-size: 100% 33px;
-    background-position: 50% 30%;
+    background-position: 50% 0;
     background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
@@ -31,29 +33,27 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: -20px;
-      height: 180px;
-      background-size: 140% 130px;
+      height: 104px;
+      background-size: 100% 104px;
     }
   }
 }
 
 .map__image {
-  position: relative;
-  height: 200px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-size: auto auto;
-  background-repeat: repeat-x;
-  background-position: center center;
+  position: absolute;
+  top: -222%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+
   @media (min-width: @tablet-width) {
-    height: 380px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-size: 700px auto;
+    top: -93%;
+    width: 700px;
   }
+
   @media (min-width: @desktop-width) {
-    height: 480px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-size: 1200px auto;
+    top: -53%;
+    width: 1200px;
   }
 }
 
@@ -62,10 +62,11 @@
   z-index: 10;
   left: 50%;
   top: 55%;
+  transform: translate(-50%, -45%);
   width: 35px;
   height: 35px;
   background-image: url("../img/icon-map-marker.svg");
+  background-size: 35px 35px;
   background-repeat: no-repeat;
 }
-
 

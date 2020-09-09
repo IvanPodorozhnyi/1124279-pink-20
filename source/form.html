@@ -86,17 +86,118 @@
       </p>
     </div>
 
-    <form action="#" class="form">
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </form>
-
   </section>
 
+  <section>
+    <form action="https://echo.htmlacademy.ru" class="form" method="get">
+      <div class="form__person">
+        <fieldset class="form__fields form__fields--person">
+          <div class="form__person-input-wrap">
+            <label class="form__text-label" for="surname">Фамилия:</label>
+            <input class="form__text-input" id="surname" name="surname" placeholder="Укажите фамилию *" required
+                   type="text">
+          </div>
+          <div class="form__person-input-wrap">
+            <label class="form__text-label" for="name">Имя:</label>
+            <input class="form__text-input" id="name" name="name" placeholder="Введите ваше имя *" required type="text">
+          </div>
+          <div class="form__person-input-wrap">
+            <label class="form__text-label" for="patronymic">Отчество:</label>
+            <input class="form__text-input" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже"
+                   type="text">
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__achievements">
+        <fieldset class="form__fields form__fields--achievements">
+          <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__flex-wrap">
+            <input class="form__checkbox" id="shark" name="achievements" type="checkbox" value="Selfie width shark">
+            <label class="form__label form__label--shark" for="shark">
+              <span class="form__achievements-indicator"></span>
+              Сделал селфи с акулой
+            </label>
+            <input class="form__checkbox" id="beach" name="achievements" type="checkbox" value="Burned on the beach">
+            <label class="form__label form__label--beach" for="beach">
+              <span class="form__achievements-indicator"></span>
+              Обгорел на пляже
+            </label>
+            <input class="form__checkbox" id="norris" name="achievements" type="checkbox" value="Chuck Norris">
+            <label class="form__label form__label--norris" for="norris">
+              <span class="form__achievements-indicator"></span>
+              Видел Чака Норриса
+            </label>
+            <input class="form__checkbox" id="souvenirs" name="achievements" type="checkbox" value="Bought souvenirs">
+            <label class="form__label form__label--souvenirs" for="souvenirs">
+              <span class="form__achievements-indicator"></span>
+              Накупил сувениров
+            </label>
+            <input class="form__checkbox" id="tower" name="achievements" type="checkbox" value="Keep tower">
+            <label class="form__label form__label--tower" for="tower">
+              <span class="form__achievements-indicator"></span>
+              Удержал башню
+            </label>
+            <input class="form__checkbox" id="hotel" name="achievements" type="checkbox" value="Destroy hotel">
+            <label class="form__label form__label--hotel" for="hotel">
+              <span class="form__achievements-indicator"></span>
+              Разгромил отель
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__contact">
+        <fieldset class="form__fields form__fields--contact">
+          <legend class="form__title form__title--contact">Контактная информация</legend>
+          <div class="form__flex-wrap">
+            <div class="form__field-point form__field-point--phone">
+              <label class="form__text-label form__text-label--phone" for="phone">Номер телефона</label>
+              <div class="form__input-wrap form__input-wrap--phone">
+                <input class="form__text-input" id="phone" name="phone" placeholder="Номер, пожалуйста" type="text">
+              </div>
+            </div>
+            <div class="form__field-point form__field-point--mail">
+              <label class="form__text-label form__text-label--mail" for="mail">адрес почты</label>
+              <div class="form__input-wrap form__input-wrap--mail">
+                <input class="form__text-input form__text-input--mail" id="mail" name="mail"
+                       placeholder="Введите почту *" required type="text">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__apps">
+        <fieldset class="form__fields form__fields--apps">
+          <legend class="form__title">С каким приложением путешествовали?</legend>
+          <input checked class="form__radio" id="pink-ios" name="apps-option" type="radio" value="Pink iOS">
+          <label class="form__label form__label--radio" for="pink-ios">
+            <span class="form__apps-indicator"></span>
+            Pink для iOS
+          </label>
+          <input class="form__radio" id="pink-android" name="apps-option" type="radio" value="Pink Android">
+          <label class="form__label form__label--radio" for="pink-android">
+            <span class="form__apps-indicator"></span>
+            Pink на Android
+          </label>
+          <input class="form__radio" id="pink-windows" name="apps-option" type="radio" value="Windows Phone">
+          <label class="form__label form__label--radio" for="pink-windows">
+            <span class="form__apps-indicator"></span>
+            Windows Phone
+          </label>
+        </fieldset>
+      </div>
+      <div class="form__emotions">
+        <fieldset class="form__fields form__fields--emotions">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <textarea class="form__text-emotions"
+                    name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
+      </div>
+      <div class="form__button-wrapper">
+        <input class="button button--competitive-send" type="submit" value="Отправить форму">
+        <div class="form__legend"><span>*</span> — обязательные <span>для заполнения</span> поля</div>
+      </div>
+    </form>
+  </section>
 
 </main>
 <footer class="page-footer">

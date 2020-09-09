@@ -30,10 +30,16 @@
 }
 
 .photo__post {
+
+  display: block;
   width: 280px;
   height: 180px;
   color: @white;
   text-decoration: none;
+
+  &:not(&--full):nth-child(n) {
+    margin-top: 24px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 300px;
@@ -67,7 +73,8 @@
       position: absolute;
       z-index: 10;
       top: 0;
-      right: 20px;
+      right: 21px;
+      font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
       padding: 6px 20px;
       font-size: 12px;
       font-weight: 700;
@@ -103,8 +110,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 280px;
+    width: 87%;
     box-sizing: border-box;
+
 
     @media (min-width: @tablet-width) {
       flex-flow: row wrap;
@@ -122,6 +130,7 @@
 
 .photo__author-name {
   font-weight: 700;
+  font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .photo__date,
@@ -146,7 +155,7 @@
 }
 
 .photo__like-count {
-  margin-left: 20px;
+  padding-left: 15px;
   color: @pink;
 
   @media (min-width: @tablet-width) {
@@ -163,6 +172,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding-left: 0;
 }
 
 .photo__author {
@@ -173,7 +183,7 @@
 
 .photo__likes {
   display: flex;
-
+  justify-content: left;
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -183,7 +193,7 @@
 .photo__wrapper {
   margin: 0 auto;
   width: 280px;
-  margin-top: 23px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     display: flex;

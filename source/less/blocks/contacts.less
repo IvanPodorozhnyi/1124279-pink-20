@@ -1,9 +1,11 @@
 .contacts {
   text-align: center;
   font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
-
-  padding-top: 29px;
-  padding-bottom: 35px;
+  padding-bottom: 8px;
+  margin-top: 32px;
+  @media (min-width: @desktop-width) {
+    margin-top: 52px;
+  }
 
 }
 
@@ -12,6 +14,7 @@
   margin: 0 auto;
   @media (min-width: @tablet-width) {
     width: 620px;
+
   }
   @media (min-width: @desktop-width) {
     width: 940px;
@@ -20,26 +23,59 @@
 
 .contacts__list {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 10px;
+
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
 
-    padding-top: 49px;
+    padding-top: 21px;
   }
-  @media (min-width: @tablet-width) {
-    padding-top: 59px;
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
   }
 }
 
 .contacts__item {
   margin: 0 auto;
-  width: 230px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+
+  &:last-child {
+    margin-top: 10px;
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+    }
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      order: 1;
+    }
+  }
+
+  &--email {
+    @media (min-width: @desktop-width) {
+      order: 3;
+    }
+  }
+
+  &--address {
+    @media (min-width: @desktop-width) {
+      order: 2;
+    }
+  }
+
 }
 
 .contacts__list-action {
@@ -57,6 +93,9 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  @media (min-width: @desktop-width) {
+    margin-top: 20px;
+  }
 }
 
 .contacts__list-link {
@@ -65,23 +104,21 @@
 }
 
 .contacts__title {
+  padding-top: 8px;
   line-height: 29px;
   font-size: 24px;
   font-weight: 300;
-
-  margin-top: 24px;
-  margin-bottom: 35px;
+  font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
 
   @media (min-width: @tablet-width) {
-    font-size: 40px;
-    line-height: 48px;
-
     margin: 0 auto;
     width: 480px;
-
+    line-height: 54px;
+    text-align: center;
+    font-size: 40px;
   }
-  @media (min-width: @tablet-width) {
-    line-height: 60px;
+  @media (min-width: @desktop-width) {
+    line-height: 68px;
     font-size: 50px;
   }
 }

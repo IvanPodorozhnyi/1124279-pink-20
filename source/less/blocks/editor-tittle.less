@@ -1,6 +1,5 @@
 .editor-title {
-  padding: 3px 0 41px;
-
+  padding-bottom: 30px;
   @media (min-width: @tablet-width) {
     padding: 24px 0 69px;
   }
@@ -14,7 +13,9 @@
   font-weight: 300;
   width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
@@ -26,4 +27,10 @@
     padding: 0 10px;
   }
 
+}
+
+.editor-title__titles {
+  &:last-child {
+    margin-top: -16px;
+  }
 }

@@ -8,7 +8,6 @@
 </head>
 <body class="page__body">
 <header class="page-header">
-
   <nav class="main-nav main-nav--opened main-nav--nojs">
     <div class="main-nav__wrapper">
       <div class="main-nav__header">
@@ -72,7 +71,7 @@
   </nav>
 
   <div class="intro intro--index">
-    <h2 class="intro__title">Взгляните <br> на жизнь иначе!</h2>
+    <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
     <picture>
       <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
@@ -83,7 +82,7 @@
       <div class="apps__wrapper">
         <a class="apps__button button" href="">Скачать приложение</a>
         <ul class="apps__list">
-          <li class="apps__item apps__item--apple"><a href=""><span
+          <li class="apps__item apps__item--apple"><a href="https://www.apple.com/ru/ios/app-store/"><span
             class="visually-hidden">Приложение для Apple</span>
             <svg enable-background="new 0 0 46.21 56.753" height="56.753px" id="Layer_1" version="1.0"
                  viewBox="0 0 46.21 56.753" width="46.21px" x="0px" xml:space="preserve"
@@ -94,7 +93,7 @@
       </svg>
           </a>
           </li>
-          <li class="apps__item apps__item--android"><a href=""><span
+          <li class="apps__item apps__item--android"><a href="https://play.google.com/store"><span
             class="visually-hidden">Приложение для Android</span>
             <svg enable-background="new 0 0 42.084 47.041" height="47.041px" id="Layer_1"
                  version="1.1" viewBox="0 0 42.084 47.041" width="42.084px" x="0px" xml:space="preserve"
@@ -113,7 +112,7 @@
                 fill="#A4C639"/>
       </svg>
           </a></li>
-          <li class="apps__item apps__item--windows"><a href=""><span
+          <li class="apps__item apps__item--windows"><a href="https://www.microsoft.com/en-us/store/apps/"><span
             class="visually-hidden">Приложение для Windows</span>
             <svg enable-background="new 0 0 43.922 41.992" height="41.992px" id="Layer_1"
                  version="1.0" viewBox="0 0 43.922 41.992" width="43.922px" x="0px" xml:space="preserve"
@@ -138,7 +137,7 @@
   <h1 class="visually-hidden">PINK - раскрашивание серых будней в розовый цвет!</h1>
   <div class="page-main__titles">
     <p class="page-main__title page-main__title--first">Устали от серости мегаполиса?</p>
-    <p class="page-main__title">Нам есть, что вам <br> предложить!</p>
+    <p class="page-main__title">Нам есть, что вам предложить!</p>
   </div>
 
 
@@ -333,22 +332,22 @@
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
       <ul class="contacts__list">
-        <li class="contacts__item contacts__item">
-          <p class="contacts__list-action">Звоните:</p>
+        <li class="contacts__item contacts__item--phone">
+          <span class="contacts__list-action">Звоните:</span>
           <span class="contacts__list-description">
           <a class="contacts__list-link" href="#">+7 (812) 555-66-66</a>
         </span>
         </li>
 
-        <li class="contacts__item contacts__item">
-          <p class="contacts__list-action">Пишите:</p>
+        <li class="contacts__item contacts__item--email">
+          <span class="contacts__list-action">Пишите:</span>
           <span class="contacts__list-description">
           <a class="contacts__list-link" href="#">mail@htmlacademy.ru</a>
         </span>
         </li>
 
-        <li class="contacts__item contacts__item">
-          <p class="contacts__list-action">Приезжайте в гости:</p>
+        <li class="contacts__item contacts__item--address">
+          <span class="contacts__list-action">Приезжайте в гости:</span>
           <span class="contacts__list-description">
           <a class="contacts__list-link">ул. Большая Конюшенная, 19/8</a>
         </span>
@@ -360,11 +359,12 @@
   </section>
 
   <div class="map">
-    <div class="map__image">
-      <div class="map__marker"></div>
-    </div>
-
-
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+      <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+      <img alt="map" class="map__image" src="img/bg-map-mobile@1x.png">
+    </picture>
+    <div class="map__marker"></div>
   </div>
 </main>
 <footer class="page-footer">
