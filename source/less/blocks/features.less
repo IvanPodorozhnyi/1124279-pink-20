@@ -29,18 +29,24 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media @retina {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 60%;
+  }
 
   @media (min-width: @tablet-width) {
     width: 620px;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 0 25px;
+    background-position: 0 18px;
     background-size: auto;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: -13px;
-
-
+    margin-top: -5px;
+  }
+  @media @retina-tablet {
+    background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    background-size: 42%;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,7 +56,6 @@
     padding: 12px 0 0;
     width: 960px;
     background: none;
-
   }
 }
 
@@ -63,9 +68,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    width: 320px;
+    width: 51.5%;
     text-align: left;
-    padding-top: 4px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -78,9 +83,11 @@
   }
 
   &--first {
-
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    }
+    @media @retina-desktop {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
   }
 
@@ -92,16 +99,23 @@
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-2-desktop@1x.png");
     }
+    @media @retina-desktop {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
   }
   &--third {
     @media (min-width: @tablet-width) {
-      margin-top: -2px;
+      margin-top: 1px;
     }
     @media (min-width: @desktop-width) {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
     }
     margin-top: 6px;
     margin-bottom: 28px;
+
+    @media @retina-desktop {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 }
 
@@ -136,3 +150,6 @@
     padding-top: 15px;
   }
 }
+
+
+

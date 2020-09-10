@@ -1,0 +1,40 @@
+.logo__link {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
+
+
+.logo {
+  &:hover .logo__link path {
+    fill: @pink;
+  }
+
+  &:active .logo__link path {
+    fill: fade(#ffffff, 30%);
+  }
+}

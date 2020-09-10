@@ -6,6 +6,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: #1d2631;
+  @media @retina {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   display: flex;
   flex-direction: column;
@@ -13,18 +16,26 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 94px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-
+  }
+  @media @retina-tablet {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
   }
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
     padding-bottom: 109px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    @media @retina {
 
-
+    }
+  }
+  @media @retina-desktop {
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 
 }
+
+
 
 .page-header__logo {
   height: 23px;
@@ -33,6 +44,10 @@
   @media (min-width: @tablet-width) {
     width: 147px;
     height: 40px;
+  }
+  @media (min-width: @desktop-width) {
     padding: 0;
   }
+
 }
+

@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 29px;
+  padding-top: 31px;
   padding-bottom: 8px;
   text-align: center;
 
@@ -10,10 +10,10 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 80px;
+    background-position: 50% 70px;
   }
 }
 
@@ -76,7 +76,7 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,29 +87,16 @@
 .reviews__quote {
   margin: 0;
   max-height: 190px;
-
   @media (min-width: @tablet-width) {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    font-family: "OpenSans", "Arial", sans-serif;
     max-height: 90px;
     font-size: 18px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
-  }
-}
-
-
-.slider-controls {
-  margin-top: 28px;
-  margin-bottom: 12px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }
 
@@ -120,7 +107,15 @@
     position: absolute;
     display: flex;
     top: 15%;
-    right: 8px;
-    left: 8px;
+    right: 1px;
+    left: 1px;
   }
+}
+
+.reviews__slider-controls {
+  margin-top: 35px;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
 }
