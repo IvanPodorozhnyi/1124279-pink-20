@@ -3,6 +3,9 @@
   font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
   padding-bottom: 8px;
   margin-top: 32px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
   @media (min-width: @desktop-width) {
     margin-top: 52px;
   }
@@ -37,7 +40,13 @@
     padding-top: 21px;
   }
   @media (min-width: @desktop-width) {
-    padding-top: 23px;
+    padding-top: 26px;
+  }
+
+  &--email {
+    &:hover {
+
+    }
   }
 }
 
@@ -87,18 +96,34 @@
 }
 
 .contacts__list-description {
-  color: @pink;
   font-family: "OpenSans-Light", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 4px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-top: 20px;
+
   }
 }
 
 .contacts__list-link {
+  &--email {
+    &:hover {
+      text-decoration: underline;
+      color: #283645;
+    }
+
+    &:active {
+      color: fade(#283645, 30%);
+    }
+  }
+
   text-decoration: none;
   color: @pink;
 }
