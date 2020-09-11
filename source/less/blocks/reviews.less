@@ -1,16 +1,15 @@
 .reviews {
   padding-top: 31px;
-  padding-bottom: 8px;
+  padding-bottom: 27px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     padding-top: 24px;
-
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 70px;
@@ -43,7 +42,7 @@
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 0;
-    width: 686px;
+    width: 696px;
   }
 }
 
@@ -113,9 +112,15 @@
 }
 
 .reviews__slider-controls {
-  margin-top: 35px;
+  margin-top: 25px;
   @media (min-width: @tablet-width) {
-    display: none;
+    padding-top: 10px;
   }
 
+}
+
+.reviews__slider-controls button {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

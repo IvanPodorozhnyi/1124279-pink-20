@@ -1,53 +1,51 @@
 .map {
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 220px;
+  margin-top: -20px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
-    height: 355px;
+    height: 385px;
     margin-bottom: 5px;
   }
 
   @media (min-width: @desktop-width) {
     height: 501px;
     margin-top: -10px;
-    margin-bottom: 32px;
+    margin-bottom: 42px;
   }
 
   &::before {
-    content: "";
+    content: " ";
     position: absolute;
-    z-index: 100;
-    top: 0;
     left: 0;
-    right: 0;
-    height: 33px;
-    background-image: url("../img/bg-triangle-white-footer.png");
-    background-size: 200% 33px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
+    top: 0;
+    border-top: 55px solid #ffffff;
+    border-top-width: 60px;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+    z-index: 10;
 
     @media (min-width: @tablet-width) {
-      height: 67px;
-      background-size: 77% 65px;
+      border-top-width: 72px;
     }
-
     @media (min-width: @desktop-width) {
-      height: 104px;
-      background-size: 100% 104px;
+      border-top-width: 80px;
     }
   }
 }
 
 .map__image {
   position: absolute;
-  top: -222%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
   width: 320px;
 
+
   @media (min-width: @tablet-width) {
-    top: -113%;
+    top: -98%;
     width: 660px;
 
   }
@@ -62,7 +60,7 @@
   position: absolute;
   z-index: 10;
   left: 50%;
-  top: 55%;
+  top: 60%;
   transform: translate(-50%, -45%);
   width: 35px;
   height: 35px;
