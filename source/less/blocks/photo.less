@@ -1,14 +1,14 @@
 .photo {
   margin-bottom: 20px;
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 50px;
-  }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     width: 300px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
   }
 
   &--full {
@@ -21,6 +21,7 @@
     @media (min-width: @tablet-width) {
       width: auto;
       max-width: 700px;
+      margin-bottom: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -103,7 +104,9 @@
   background-color: @grey;
 
   @media (min-width: @tablet-width) {
-    padding: 23px 32px 24px 27px;
+    padding: 22px 32px 24px 27px;
+    margin-bottom: -24px
+
   }
 
   &--full {
@@ -117,7 +120,8 @@
     @media (min-width: @tablet-width) {
       flex-flow: row wrap;
       justify-content: space-between;
-      padding: 30px 20px 30px;
+      padding-top: 25px;
+      padding-bottom: 39px;
       width: 620px;
     }
 
@@ -147,10 +151,16 @@
 .photo__text {
   margin-top: 0;
   margin-bottom: 11px;
-
   @media (min-width: @tablet-width) {
     margin-bottom: 12px;
     min-height: 48px;
+  }
+}
+
+.photo__text--full {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    min-height: auto;
   }
 }
 
@@ -159,9 +169,10 @@
   color: @pink;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
-    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 0;
   }
+
 }
 
 .photo__like-button svg {
@@ -173,6 +184,9 @@
   background-color: transparent;
   cursor: pointer;
   padding-left: 0;
+  @media (min-width: @tablet-width) {
+    margin-right: -10px;
+  }
 }
 
 .photo__author {
@@ -187,6 +201,12 @@
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+
+  &--full {
+    @media (min-width: @tablet-width) {
+      order: 1;
+    }
   }
 }
 
