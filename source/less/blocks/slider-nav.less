@@ -18,7 +18,6 @@
   height: 41px;
   font-style: inherit;
   background-color: transparent;
-
   &::before {
     content: "";
     position: absolute;
@@ -30,22 +29,18 @@
     border-top: 2px solid fade(@dark-blue-gray, 30%);
     border-right: 2px solid fade(@dark-blue-gray, 30%);
   }
-
   &:hover::before {
     border-top-color: fade(@dark-blue-gray, 60%);
     border-right-color: fade(@dark-blue-gray, 60%);
   }
-
   &:active::before {
     border-top-color: fade(@dark-blue-gray, 10%);
     border-right-color: fade(@dark-blue-gray, 10%);
   }
-
   &--prev::before {
     left: 7px;
     transform: translateY(-50%) rotate(225deg);
   }
-
   &--next::before {
     right: 7px;
     transform: translateY(-50%) rotate(45deg);

@@ -2,7 +2,6 @@
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #f2f2f2;
-
   @media (min-width: @tablet-width) {
     padding-top: 58px;
     padding-bottom: 20px;
@@ -11,7 +10,6 @@
     margin-bottom: 66px;
   }
 }
-
 
 .photo-editor__wrapper {
   width: 280px;
@@ -29,13 +27,11 @@
   }
 }
 
-
 .photo-editor__image {
   width: 280px;
   height: 375px;
   margin-bottom: 37px;
   display: block;
-
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
@@ -45,29 +41,23 @@
   }
 }
 
-
 .photo-editor__setting {
   margin-bottom: 28px;
   height: 48px;
   fill: #b5b9be;
-
   &:hover {
     fill: #8d949b
   }
-
   &--active {
     fill: @pink;
   }
-
   &--crop {
     margin-left: 13px;
   }
-
   &--contrast {
     margin-right: 25px;
     padding-top: 10px;
   }
-
   @media (min-width: @tablet-width) {
     position: relative;
     width: 27px;
@@ -83,17 +73,14 @@
       height: 1px;
       background: #dddfe0;
     }
-
     &--contrast {
       margin-right: 20px;
       margin-top: -5px;
       margin-left: 2px;
     }
-
     &--crop {
       margin-left: 0;
     }
-
   }
   @media (min-width: @desktop-width) {
     width: 55px;
@@ -103,19 +90,16 @@
       bottom: -11px;
       width: 410px;
     }
-
     &--contrast {
       margin-bottom: 5px;
       margin-left: 10px;
     }
-
     &--fill {
       margin-left: 5px;
       padding-top: 5px;
     }
   }
 }
-
 
 .photo-editor__buttons-wrap {
   display: flex;
@@ -125,7 +109,6 @@
   padding-bottom: 34px;
   flex-basis: 100%;
   order: 5;
-
   &::before {
     content: " ";
     position: absolute;
@@ -136,7 +119,6 @@
     height: 1px;
     background: #dddfe0;
   }
-
   @media (min-width: @tablet-width) {
     order: 0;
     align-self: flex-end;
@@ -155,13 +137,11 @@
   }
 }
 
-
 .photo-editor__controls {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
   @media (min-width: @tablet-width) {
     width: 260px;
     padding-right: 14px;
@@ -188,25 +168,21 @@
   border: 2px solid @pink;
   border-radius: 50%;
   cursor: pointer;
-
   &:hover {
     background: @pink;
   }
-
   &--crop {
     left: 70%;
     @media (min-width: @desktop-width) {
       left: 25%;
     }
   }
-
   &--fill {
     left: 10%;
     @media (min-width: @desktop-width) {
       left: 86%;
     }
   }
-
   &--contrast {
     left: 47%;
     @media (min-width: @desktop-width) {
@@ -222,32 +198,24 @@
   height: 2px;
   background: @black;
   margin-bottom: 16px;
-
   &--crop {
     order: 5;
   }
-
   &--fill {
     display: none;
   }
-
   &--contrast {
     display: none;
   }
-
   @media (min-width: @tablet-width) {
     width: 200px;
     margin-top: 15px;
-
     &--fill {
       display: block;
     }
-
     &--contrast {
       display: block;
-
     }
-
     &--crop {
       order: 0;
     }
@@ -263,13 +231,10 @@
   @media (min-width: @tablet-width) {
     &--contrast {
       fill: @pink;
-
     }
-
     &--fill {
       fill: @pink;
     }
-
   }
 }
 
@@ -280,5 +245,4 @@
   @media (min-width: @desktop-width) {
     zoom: 1;
   }
-
 }
