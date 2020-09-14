@@ -6,9 +6,11 @@
   flex-direction: row;
   margin-bottom: 35px;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 15px;
   }
@@ -22,10 +24,12 @@
   border: 3px solid fade(@dark-blue-gray, 10%);
   border-radius: 50px;
   cursor: pointer;
+
   &:hover {
     border: 3px solid @dark-blue-gray;
     transition: 0.5s;
   }
+
   &:active {
     opacity: 0.1;
   }
@@ -36,5 +40,5 @@
 }
 
 .social__link svg {
-  fill: #D22856;
+  fill: #d22856;
 }
