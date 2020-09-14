@@ -76,9 +76,9 @@
     background-position: 0 0;
   }
 
-  &--hit:before {
+  &--hit::before {
     content: "хит";
-    font-family: "OpenSans-Light", "Verdana" sans-serif;
+    font-family: "OpenSans-Light", "Verdana", sans-serif;
     transform: rotate(-45deg);
     font-size: 14px;
     line-height: 30px;
@@ -113,7 +113,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-  ;
   }
 
   @media (min-width: @desktop-width) {
@@ -163,7 +162,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &:before {
+  &::before {
     content: attr(data-name);
     text-transform: uppercase;
   }
@@ -171,7 +170,7 @@
   @media (min-width: @tablet-width) {
     transform: translateX(50%);
 
-    &:before {
+    &::before {
       display: none;
     }
   }
