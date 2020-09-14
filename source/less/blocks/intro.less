@@ -1,6 +1,7 @@
 .intro {
   text-align: center;
   margin-top: 22px;
+
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     display: grid;
@@ -10,33 +11,41 @@
     padding-top: 83px;
     padding-left: 30px;
   }
+
   @media (min-width: @desktop-width) {
     width: 940px;
     padding-left: 0;
     padding-top: 70px;
   }
+
   &--photo {
     padding-top: 9px;
     padding-bottom: 51px;
+
     @media (min-width: @tablet-width) {
+      display: flex;
       width: 100%;
       margin: 0 auto;
       padding-top: 57px;
       padding-left: 1px;
       padding-bottom: 4px;
     }
+
     @media (min-width: @desktop-width) {
       width: 940px;
       padding-top: 35px;
       margin-bottom: -53px;
     }
   }
+
   &--form {
     padding-top: 8px;
     padding-bottom: 12px;
+
     @media (min-width: @tablet-width) {
       padding: 60px 29px 55px;
     }
+
     @media (min-width: @desktop-width) {
       padding: 31px 0 8px;
     }
@@ -44,7 +53,7 @@
 }
 
 .intro__title {
-  font-family: "OpenSans-Light", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "OpenSans-Light", "Verdana", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -53,30 +62,35 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 30px;
+
   @media (min-width: @tablet-width) {
     font-size: 40px;
     line-height: 48px;
     margin-top: 11px;
-    width: 60%
+    width: 60%;
   }
+
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
     width: 100%;
     margin-top: 15px;
   }
+
   &--photo {
     @media (min-width: @tablet-width) {
       font-size: 50px;
       line-height: 68px;
       margin-top: 11px;
-      width: 50%
+      width: 50%;
     }
   }
+
   &--form {
     font-weight: 300;
     font-size: 24px;
     line-height: 33px;
+
     @media (min-width: @tablet-width) {
       font-size: 50px;
       line-height: 68px;
@@ -88,19 +102,15 @@
 .intro__img {
   margin-left: -65px;
   margin-bottom: -30px;
+
   @media (min-width: @tablet-width) {
     max-width: unset;
     margin-left: -350px;
     margin-top: -8px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: -288px;
     margin-top: 17px;
-  }
-}
-
-.intro--photo {
-  @media (min-width: @tablet-width) {
-    display: flex;
   }
 }

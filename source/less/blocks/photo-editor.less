@@ -2,10 +2,12 @@
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #f2f2f2;
+
   @media (min-width: @tablet-width) {
     padding-top: 58px;
     padding-bottom: 20px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 66px;
   }
@@ -16,11 +18,13 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     width: 620px;
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-width: @desktop-width) {
     width: 940px;
     justify-content: space-between;
@@ -32,10 +36,12 @@
   height: 375px;
   margin-bottom: 37px;
   display: block;
+
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 400px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 80px;
   }
@@ -45,24 +51,30 @@
   margin-bottom: 28px;
   height: 48px;
   fill: #b5b9be;
+
   &:hover {
-    fill: #8d949b
+    fill: #8d949b;
   }
+
   &--active {
     fill: @pink;
   }
+
   &--crop {
     margin-left: 13px;
   }
+
   &--contrast {
     margin-right: 25px;
     padding-top: 10px;
   }
+
   @media (min-width: @tablet-width) {
     position: relative;
     width: 27px;
     margin: 8px 29px 0 0;
     height: 24px;
+
     &::after {
       content: " ";
       position: absolute;
@@ -73,27 +85,38 @@
       height: 1px;
       background: #dddfe0;
     }
+
     &--contrast {
       margin-right: 20px;
       margin-top: -5px;
       margin-left: 2px;
+      fill: @pink;
     }
+
     &--crop {
       margin-left: 0;
     }
+
+    &--fill {
+      fill: @pink;
+    }
   }
+
   @media (min-width: @desktop-width) {
     width: 55px;
     height: 48px;
     margin: -6px 20px 0 0;
+
     &::after {
       bottom: -11px;
       width: 410px;
     }
+
     &--contrast {
       margin-bottom: 5px;
       margin-left: 10px;
     }
+
     &--fill {
       margin-left: 5px;
       padding-top: 5px;
@@ -109,6 +132,7 @@
   padding-bottom: 34px;
   flex-basis: 100%;
   order: 5;
+
   &::before {
     content: " ";
     position: absolute;
@@ -119,15 +143,18 @@
     height: 1px;
     background: #dddfe0;
   }
+
   @media (min-width: @tablet-width) {
     order: 0;
     align-self: flex-end;
     padding: 0;
     padding-bottom: 42px;
+
     &::before {
       display: none;
     }
   }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -142,11 +169,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media (min-width: @tablet-width) {
     width: 260px;
     padding-right: 14px;
     margin-bottom: 12px;
   }
+
   @media (min-width: @desktop-width) {
     width: 410px;
     margin-right: 66px;
@@ -162,29 +191,36 @@
   height: 10px;
   visibility: visible;
   display: block;
-  background: #fff;
+  background: #ffffff;
   top: -5px;
   left: 80%;
   border: 2px solid @pink;
   border-radius: 50%;
   cursor: pointer;
+
   &:hover {
     background: @pink;
   }
+
   &--crop {
     left: 70%;
+
     @media (min-width: @desktop-width) {
       left: 25%;
     }
   }
+
   &--fill {
     left: 10%;
+
     @media (min-width: @desktop-width) {
       left: 86%;
     }
   }
+
   &--contrast {
     left: 47%;
+
     @media (min-width: @desktop-width) {
       left: 56%;
     }
@@ -198,28 +234,36 @@
   height: 2px;
   background: @black;
   margin-bottom: 16px;
+
   &--crop {
     order: 5;
   }
+
   &--fill {
     display: none;
   }
+
   &--contrast {
     display: none;
   }
+
   @media (min-width: @tablet-width) {
     width: 200px;
     margin-top: 15px;
+
     &--fill {
       display: block;
     }
+
     &--contrast {
       display: block;
     }
+
     &--crop {
       order: 0;
     }
   }
+
   @media (min-width: @desktop-width) {
     width: 290px;
     margin-right: 24px;
@@ -227,21 +271,11 @@
   }
 }
 
-.photo-editor__setting {
-  @media (min-width: @tablet-width) {
-    &--contrast {
-      fill: @pink;
-    }
-    &--fill {
-      fill: @pink;
-    }
-  }
-}
-
 .photo-editor__setting svg {
   @media (min-width: @tablet-width) {
     zoom: 0.5;
   }
+
   @media (min-width: @desktop-width) {
     zoom: 1;
   }

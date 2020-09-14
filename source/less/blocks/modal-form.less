@@ -6,21 +6,27 @@
   width: 320px;
   background-color: @white;
   text-align: center;
-  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
+
   &--success {
     display: none;
+
     @media (min-width: @tablet-width) {
       width: 460px;
     }
+
     @media (min-width: @desktop-width) {
       width: 780px;
     }
   }
+
   &--error {
     display: none;
+
     @media (min-width: @tablet-width) {
       width: 460px;
     }
+
     @media (min-width: @desktop-width) {
       width: 780px;
     }
@@ -35,10 +41,12 @@
   padding-bottom: 22px;
   display: flex;
   flex-direction: column;
+
   @media (min-width: @tablet-width) {
     padding-right: 80px;
     padding-left: 80px;
   }
+
   @media (min-width: @desktop-width) {
     padding-top: 100px;
     padding-bottom: 60px;
@@ -46,11 +54,12 @@
 }
 
 .modal-form__title {
-  font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "OpenSans-Bold", "Verdana", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: @black;
   padding-bottom: 22px;
+
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
@@ -60,6 +69,7 @@
 .modal-form__text {
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 300;
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
@@ -70,24 +80,30 @@
 
 .modal-form__bottom {
   padding: 48px 20px 52px 20px;
+
   @media (min-width: @tablet-width) {
     padding-left: 80px;
     padding-right: 80px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 160px;
     padding-right: 160px;
   }
+
   &--success {
     background-color: @grey;
   }
+
   &--error {
     padding-top: 20px;
     padding-bottom: 50px;
+
     @media (min-width: @tablet-width) {
       padding-top: 15px;
       padding-bottom: 52px;
     }
+
     @media (min-width: @desktop-width) {
       padding-left: 240px;
       padding-right: 240px;

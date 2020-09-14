@@ -1,24 +1,29 @@
 .photo {
   margin-bottom: 20px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     width: 300px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 55px;
   }
+
   &--full {
     position: relative;
     overflow: hidden;
     margin: 0 auto;
     width: auto;
     max-width: 320px;
+
     @media (min-width: @tablet-width) {
       width: auto;
       max-width: 700px;
       margin-bottom: 0;
     }
+
     @media (min-width: @desktop-width) {
       max-width: 1200px;
     }
@@ -31,48 +36,57 @@
   height: 180px;
   color: @white;
   text-decoration: none;
+
   &:not(&--full):nth-child(n) {
     margin-top: 24px;
   }
+
   @media (min-width: @tablet-width) {
     width: 300px;
     height: 300px;
   }
+
   @media (min-width: @desktop-width) {
     width: 300px;
     height: 400px;
   }
+
   &--full {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 320px;
     height: 137px;
+
     @media (min-width: @tablet-width) {
       width: 700px;
       height: 509px;
     }
+
     @media (min-width: @desktop-width) {
       width: 1200px;
       height: 506px;
     }
+
     &::before {
       content: "Панорама дня";
       position: absolute;
       z-index: 10;
       top: 0;
       right: 21px;
-      font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+      font-family: "OpenSans-Bold", "Verdana", sans-serif;
       padding: 6px 20px;
       font-size: 12px;
       font-weight: 700;
       line-height: 24px;
       text-transform: uppercase;
       background-color: @pink;
+
       @media (min-width: @tablet-width) {
         top: 56px;
         right: 40px;
       }
+
       @media (min-width: @desktop-width) {
         top: 54px;
         right: 130px;
@@ -86,16 +100,19 @@
   flex-direction: column;
   padding: 18px 0 15px 16px;
   background-color: @grey;
+
   @media (min-width: @tablet-width) {
     padding: 22px 32px 24px 27px;
-    margin-bottom: -24px
+    margin-bottom: -24px;
   }
+
   &--full {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 87%;
     box-sizing: border-box;
+
     @media (min-width: @tablet-width) {
       flex-flow: row wrap;
       justify-content: space-between;
@@ -103,6 +120,7 @@
       padding-bottom: 39px;
       width: 620px;
     }
+
     @media (min-width: @desktop-width) {
       width: 940px;
     }
@@ -111,7 +129,7 @@
 
 .photo__author-name {
   font-weight: 700;
-  font-family: "OpenSans-Bold", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "OpenSans-Bold", "Verdana", sans-serif;
 }
 
 .photo__date,
@@ -128,6 +146,7 @@
 .photo__text {
   margin-top: 0;
   margin-bottom: 11px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 12px;
     min-height: 48px;
@@ -144,6 +163,7 @@
 .photo__like-count {
   padding-left: 15px;
   color: @pink;
+
   @media (min-width: @tablet-width) {
     padding-right: 20px;
     padding-left: 0;
@@ -151,7 +171,7 @@
 }
 
 .photo__like-button svg {
-  fill: #D22856;
+  fill: #d22856;
 }
 
 .photo__like-button {
@@ -159,6 +179,7 @@
   background-color: transparent;
   cursor: pointer;
   padding-left: 0;
+
   @media (min-width: @tablet-width) {
     margin-right: -10px;
   }
@@ -173,10 +194,12 @@
 .photo__likes {
   display: flex;
   justify-content: left;
+
   @media (min-width: @tablet-width) {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
+
   &--full {
     @media (min-width: @tablet-width) {
       order: 1;
